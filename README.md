@@ -1,7 +1,6 @@
 <h1 align="center">¡Hola! 👋 Soy Miguel</h1>
 
 # Get Next Line
-
 ## 📝 Descripción
 Get Next Line (GNL) es una función que lee una línea de texto desde un descriptor de archivo. La función devuelve la línea que se acaba de leer, o NULL si se ha alcanzado el final del archivo o si ocurrió un error.
 
@@ -117,7 +116,9 @@ El rendimiento depende del BUFFER_SIZE establecido:
 ---
 
 
-- LinkedIn: [Tu perfil de LinkedIn]
+- LinkedIn: https://www.linkedin.com/in/miguelfdezmunoz
 
 ---
+
+Nota: Este repositorio se sube con el propósito de compartir mi progreso y ofrecer un recurso orientativo para aquellos que necesiten ayuda en su aprendizaje. Espero que se utilice como base de estudio y no solo para copiar y pegar soluciones.
 <p align="center">🚀 Never stop learning!</p>
