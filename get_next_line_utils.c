@@ -6,12 +6,18 @@
 /*   By: miguel-f <miguel-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/03 20:42:40 by miguel-f          #+#    #+#             */
-/*   Updated: 2025/02/10 17:58:38 by miguel-f         ###   ########.fr       */
+/*   Updated: 2025/02/17 22:06:39 by miguel-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
+/*
+ * ft_strchr: Busca un carácter en una cadena
+ * @param s: Cadena donde buscar
+ * @param c: Carácter a buscar
+ * @return: Puntero a la primera aparición del carácter o NULL si no se encuentra
+ */
 char	*ft_strchr(const char *s, int c)
 {
 	while (*s)
@@ -28,6 +34,11 @@ char	*ft_strchr(const char *s, int c)
 		return (NULL);
 }
 
+/*
+ * ft_strdup: Crea una copia de una cadena
+ * @param s: Cadena a copiar
+ * @return: Nueva cadena duplicada o NULL si falla malloc
+ */
 char	*ft_strdup(const char *s)
 {
 	char	*new_str;
@@ -50,6 +61,13 @@ char	*ft_strdup(const char *s)
 	return (new_str);
 }
 
+/*
+ * ft_strlcpy: Copia una cadena de forma segura
+ * @param dst: Destino donde copiar
+ * @param src: Origen desde donde copiar
+ * @param size: Tamaño máximo del destino
+ * @return: Longitud de la cadena que se intentó crear
+ */
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	const char	*src_start;
@@ -72,6 +90,11 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	return (src_len);
 }
 
+/*
+ * ft_strlen: Calcula la longitud de una cadena
+ * @param s: Cadena a medir
+ * @return: Número de caracteres en la cadena
+ */
 size_t	ft_strlen(const char *s)
 {
 	size_t	len;
@@ -82,6 +105,12 @@ size_t	ft_strlen(const char *s)
 	return (len);
 }
 
+/*
+ * ft_strjoin: Une dos cadenas
+ * @param s1: Primera cadena
+ * @param s2: Segunda cadena
+ * @return: Nueva cadena con s1 + s2 o NULL si falla malloc
+ */
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*result;
